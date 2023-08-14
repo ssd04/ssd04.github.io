@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <section class="section is-small">
+
+    <section class="hero is-default">
+      <div class="hero-body">
+        <div class="content container is-size-4 is-sans-serif">
+
+          {{ range .Data.Pages }}
+          <article>
+            {{.Render "summary"}}
+          </article>
+          {{ end }}
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+{{ end }}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Custom collors
+$background-gray: #fafafa;
+
+// Update Bulma's global variables
+// $family-primary: "Cabin", "Helvetica Neue", Arial, primary;
+$family-primary: "Vollkorn", Georgia, Times, "Times New Roman", primary;
+$family-family: "Vollkorn", Georgia, Times, "Times New Roman", family;
+$family-scondary: "Vollkorn", Georgia, Times, "Times New Roman", sans-serif;
+
+// Update color variables
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+// $primary: #F1F0E8;
+// $link: $pink;
+
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $background-gray;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$primary: #222222;
+$primary-invert: #1863a1;
+
+$link: $primary !default;
+$link-hover: $primary-invert !default;
+// $link-focus-border: $primary-invert !default;
+
+@import "../bulma/bulma.sass";

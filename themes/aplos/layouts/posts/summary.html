@@ -1,0 +1,14 @@
+
+<div class="columns is-mobile is-multiline is-left">
+  <div class="column is-narrow">
+<time datetime="{{.Date.Format "2006-01-02T15:04:05Z07:00"}}" pubdate>
+  <span class='month'>{{ .Date.Format "Jan" }}</span>
+  <span class='day'>{{ .Date.Format "_2" }}</span>
+  <span class='year'>{{ .Date.Format "2006" }}</span>
+</time>
+  </div>
+  <div class="column is-narrow">
+<h1><a href="{{.RelPermalink}}">{{ .LinkTitle }}</a></h1>
+  </div>
+</div>
+

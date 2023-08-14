@@ -1,0 +1,81 @@
+{{ define "main" }}
+  <section class="section is-small">
+
+    <div class="hero is-bold has-text-centered-left">
+      <div class="hero-body">
+          <div class="content container is-size-4">
+             <h1 class="title is-1">{{ .Title }}</h1>
+          </div>
+      </div>
+    </div>
+
+    <div class="container is-bold has-text-centered">
+      <hr>
+    </div>
+
+    <div class="container is-widescreen is-size-5">
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item has-text-centered">
+            <div class="content">
+              <span class="heading is-size-4">{{ .Date.Format "Jan 2, 2006" }}</span>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div class="content">
+              <span class="heading is-size-6">{{ .ReadingTime }} Minutes to read</span>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div class="content">
+              <span class="heading is-size-6">{{ .WordCount }} Words</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="hero is-default is-bold">
+      <div class="hero-body">
+          <div class="content container is-size-3 is-sans-serif">
+             {{ .Content}}
+          </div>
+      </div>
+    </section>
+
+    <div class="container is-widescreen is-size-4">
+      <nav class="level">
+
+        <div class="level-left">
+          <div class="level-item has-text-centered">
+            <div>
+              {{ if .PrevInSection }}
+                <div class="field is-pulled-left">
+                  <a class="previous" href="{{ .PrevInSection.RelPermalink }}">« {{ .PrevInSection.LinkTitle }}</a>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <div class="level-right">
+          <div class="level-item has-text-centered">
+            <div>
+        {{ if .NextInSection }}
+          <div class="field is-pulled-right">
+            <a class="next" href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.LinkTitle }} »</a>
+          </div>
+        {{ end }}
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+
+    <div class="container is-bold has-text-centered">
+      <hr>
+    </div>
+
+  </section>
+{{ end }}
