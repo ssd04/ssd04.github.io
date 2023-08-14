@@ -3,6 +3,7 @@ help:
 	@echo ""
 
 install:
+	apt install hugo
 
 run:
 	hugo server
