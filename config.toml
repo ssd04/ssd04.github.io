@@ -1,0 +1,4 @@
+baseURL = "https://ssd04.github.io/"
+languageCode = "en-us"
+title = "i code, ergo sum"
+theme = "hugo-theme-texify"
