@@ -16,5 +16,18 @@
           </div>
       </div>
     </section>
+
+    <section class="hero is-default is-bold">
+      <div class="hero-body">
+        <div class="content container is-size-5 is-sans-serif">
+          <h1 class="title is-1">Most recent posts</h1>
+          <hr>
+          {{ range first 6 .Site.RegularPages }}
+            {{ .Render "summary" }}
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
   </section>
 {{ end }}

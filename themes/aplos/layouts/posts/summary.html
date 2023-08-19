@@ -1,14 +1,19 @@
-
-<div class="columns is-mobile is-multiline is-left">
-  <div class="column is-narrow">
-<time datetime="{{.Date.Format "2006-01-02T15:04:05Z07:00"}}" pubdate>
-  <span class='month'>{{ .Date.Format "Jan" }}</span>
-  <span class='day'>{{ .Date.Format "_2" }}</span>
-  <span class='year'>{{ .Date.Format "2006" }}</span>
-</time>
+<div class="columns is-left">
+  <div class="column is-narrow is-centered is-vcentered">
+    <div class="subtitle is-3 mb-0 mt-3">
+        <time datetime="{{.Date.Format "2006-01-02T15:04:05Z07:00"}}" pubdate>
+          <span class='month'>{{ .Date.Format "Jan" }}</span>
+          <span class='day'>{{ .Date.Format "_2" }}</span>
+          <span class='year'>{{ .Date.Format "2006" }}</span>
+        </time>
+    </div>
   </div>
-  <div class="column is-narrow">
-<h1><a href="{{.RelPermalink}}">{{ .LinkTitle }}</a></h1>
+  <div class="column">
+    <div class="title is-1 mb-0 mt-3"><a href="{{.RelPermalink}}">{{ .LinkTitle }}</a></div>
+    <div class="content">
+      {{ partial "tags.html" . }}
+    </div>
+  <hr>
   </div>
 </div>
 
