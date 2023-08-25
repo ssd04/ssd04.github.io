@@ -1,6 +1,7 @@
 {{ define "main" }}
   <section class="section is-small">
 
+    {{ if .Title }}
     <div class="hero is-bold has-text-centered-left">
       <div class="hero-body">
           <div class="content container is-size-4">
@@ -8,6 +9,7 @@
           </div>
       </div>
     </div>
+    {{ end }}
 
     <section class="hero is-default is-bold">
       <div class="hero-body">
