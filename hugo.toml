@@ -1,4 +1,4 @@
-baseURL = "https://ssd04.github.io/"
+baseURL = "http://localhost:1313"
 languageCode = "en-us"
 title = "i code ergo sum"
 theme = "aplos"
