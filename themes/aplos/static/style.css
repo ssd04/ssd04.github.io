@@ -1,5 +1,5 @@
 body {
-    zoom: 75%
+    zoom: 75%;
 }
 
 .footer a {
@@ -7,4 +7,11 @@ body {
 }
 hr {
     background-color: #e9e9e9
+}
+
+.highlight {
+  padding-bottom: 50px;
+  font-size: 0.875em;
+  font-family: 'Narita Monospace', code-block;
+  font-family: code-block;
 }
