@@ -1,10 +1,111 @@
 ---
 title: "Vim All Over the Place"
 date: 2023-08-10T20:56:48+03:00
-draft: true
+draft: false
+tags:
+- vim
+- linux
+- tools
 ---
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+You can use ***vim*** style commands and mappings almost everywhere.
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+If you get used to *vi/vim commands*, you might want to use them all over the place.
 
+\* *the following is a list consisting of some vim-like tools that I use, not a comprehenive
+list of vim-like tools/applications, like [here](https://vim.reversed.top/)*
+
+\* *this is applicable to ***Linux*** based systems*
+
+## Writing/Coding
+
+Most Linux systems come with `vi` already installed.
+
+You can also easily install `vim` or `nvim`.
+
+If you have a separate tool that you use as your development environment, most
+probably there is a *vim plugin* for it.
+
+
+## Desktop environment
+
+Full featured desktop environments (like `gnome`, `xfce`, ...) are not that much customizable,
+but if using a tilling window manager like `i3`, it can be adapted to use vim-like mappings.
+
+If using `i3`, you can set vi-like commands for managing windows:
+```bash {style=friendly}
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+mode "resize" {
+        # Pressing h will shrink the window’s width.
+        # Pressing j will grow the window’s width.
+        # Pressing j will shrink the window’s height.
+        # Pressing l will grow the window’s height.
+        bindsym h resize shrink width 1 px or 1 ppt
+        bindsym j resize grow height 1 px or 1 ppt
+        bindsym k resize shrink height 1 px or 1 ppt
+        bindsym l resize grow width 1 px or 1 ppt
+}
+```
+
+## Terminal
+
+`Tmux` can also be configured to use vim style commands to manage panels.
+
+You can easily configure it to use vim style commands to move between panels:
+```bash {style=friendly}
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+```
+
+Or to have vim-like copy and paste mappings: 
+```bash {style=friendly}
+bind p paste-buffer
+unbind-key -T copy-mode-vi Space
+unbind-key -T copy-mode-vi Enter
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection
+bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
+```
+
+## Shell
+
+By default, `bash`, `zsh` comes with emacs mode commands for shell interaction.
+They can be configured to use vim mode commands.
+
+In order to do this, set this line into shell's config file (`.bashrc`, `.zshrc`):
+```bash {style=friendly}
+bindkey -v
+```
+
+## Browser
+
+For every browser, there might be an extension for vim like control commands,
+like `Vimium` for Brave.
+
+There is also [`qutebrowser`](https://qutebrowser.org/), a full featured vim-like browser
+with vim-like mappings and vim-style commands mode.
+
+## Others
+
+`less` file viewer.
+
+`vifm` file manager.
+
+`zathura` for PDF Viewer.
+
+`cmus` as music player.
+
+`newsboat` for RSS feed reader.
