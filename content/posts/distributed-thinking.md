@@ -1,7 +1,10 @@
 ---
 title: "Distributed Thinking"
-date: 2024-08-16T10:47:17+03:00
+date: 2026-02-26T10:47:17+03:00
 draft: false
+tags: 
+- notes
+- life
 ---
 
 
@@ -84,7 +87,7 @@ the validation of a lot of minds across time.
 
 Our ***genetics*** can be seen as a collective, dynamic collaboration.
 
-[***AI***](https://en.wikipedia.org/wiki/Artificial_intelligence) systems and [LLMs](https://en.wikipedia.org/wiki/Large_language_model) can be seen as distributed thinking machines. They acquired knowledge
+***AI*** systems and [LLMs](https://en.wikipedia.org/wiki/Large_language_model) can be seen as distributed thinking machines. They acquired knowledge
 from all of us.
 
 ---

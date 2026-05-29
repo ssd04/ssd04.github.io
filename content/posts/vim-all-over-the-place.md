@@ -1,6 +1,6 @@
 ---
 title: "Vim All Over the Place"
-date: 2023-08-10T20:56:48+03:00
+date: 2023-10-07T20:56:48+03:00
 draft: false
 tags:
 - vim
