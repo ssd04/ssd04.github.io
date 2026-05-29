@@ -1,10 +1,17 @@
 ---
 title: "Distributed Thinking"
 date: 2023-08-16T10:47:17+03:00
-draft: true
+draft: false
 ---
 
-# Notes
+
+We are not alone. We are not independent. We ***think***, we ***act***, we ***contribute*** collectively.
+
+The world *around us* acts distributedly.
+
+The world *created by us* works distributedly (= [*Internet*](https://en.wikipedia.org/wiki/Internet)).
+
+## We think collectively
 
 How much we think from ourselves? Do we trully have our own original thoughts?
 We can (maybe) talk about unique desires, wishes, aspirations but not so much about unique thoughts.
@@ -17,33 +24,70 @@ and struggles. And we end up having quite similar thoughts.
 Not many of us are really getting into deep thinking and trully get over our "common" thoughts,
 and putting another block on this big tower of ideas, techniques and tools.
 
+There is this idea from [*Carl Jung*](https://en.wikipedia.org/wiki/Carl_Jung) on ["collective unconscious"](https://en.wikipedia.org/wiki/Collective_unconscious). We end up thinking collectively,
+directly or indirectly.
+
+## We act collectively
+
 Everything we do is in relation with others. Even the most introverts from us are doing their
 thing in the end for others. We function connected with each other in some way or another.
 
 At the same time, we influence each other, with our actions and with our ideas. So we end up
-with a mixed ideas and perspective on things. We act more distributed than centralized.
+with a mixed set of ideas and perspective on things. We act more distributed than centralized.
 (at least at a micro level, at macro level we can see it also from a centralized perspective -
 when the system in controlling up in the end, or from a spiritual perspective where each
 of us is influenced in a good or bad way). We end up thinking distributed, we determine
 each others perspective.
 
-- the idea from Carl Jung on "collective uncounscious"
 
-- the greatest commandment is the Bible "to love your neighbor as yourself" shows our main
-need (and challenge at the same time) on how we relate properly with each other.
+## We contribute collectively
 
-Distributed thinking / knowledge / wisdom
+The greatest commandment in the *Bible* "Love your neighbor as yourself" tells us that we
+need to collaborate, we need to understand each other, to think "the same", to understand
+***our*** thinkings, not only ***my*** thinking. This commandment shows our main
+need, but at the same time, our main challenge. We have to work together well, we have
+to collaborate.
 
-The idea that we need to collaborate to make sure we have a broad perspective on things.
-- the importance of peer reviewing
+We need to collaborate to make sure we have a broad perspective on things.
 
-- you verify your knowledge with a lot of people that lives before (by reading), with history
-    - an idea that passed the test of time, most probably has something to say
-    - advantage: "asynchronous" knowledge sharing and acquaintance
-        - you don't have to live in the same time period, or in the same place
+#### *We review each other*
 
-- in software engineering
+In every kind of relation, in order to make it work, we have to constantly polish and
+adjust each other. We peer review each other.
+In family relations, we share our needs and expectations, and desires from one to
+another to change and adjust.
 
-- AI systems can be seen as distributed thinking machines
-    - they aquired knowledge from all of us
-    - in a way it can be seen as "ultimate distributed thinking machine"
+In professional settings, we discuss and debate ideas and strategies.
+
+In software development, we review each others code.
+
+In science, good papers get's peer reviews.
+
+
+#### *We grade each other*
+
+We read books written by others, we read their thoughts. Consciously or unconsciously we
+validate or invalidate their thoughts.
+
+A thought, an idea that passed the test of time, has something to say. It passed
+the validation of a lot of minds across time.
+
+
+---
+
+***Nature*** lives as a distributed system.
+
+Our ***genetics*** can be seen as an collective dynamic collaboration.
+
+***AI*** systems / LLMs can be seen as distributed thinking machines. They aquired knowledge
+from all of us.
+
+
+---
+
+Everything manifests as a distributed system. And still.. it's very connected ...
+
+---
+
+- [1]: [Collective uncounscious](https://en.wikipedia.org/wiki/Collective_unconscious)
+- [^small talk]: [The stranger secret: how to talk to anyone – and why you should](https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should)
