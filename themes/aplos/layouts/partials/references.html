@@ -1,0 +1,29 @@
+{{ $links := findRE `<a[^>]+href="https?://[^"]+"[^>]*>.*?</a>` .Content }}
+
+{{ if $links }}
+
+<div class="container is-widescreen is-size-4">
+    <div class="content">
+        <hr>
+        <h2 class="title is-2">References</h2>
+
+        <ul style="list-style-type: circle;">
+            {{ $uniqueLinks := slice }}
+            {{ range $links }}
+              {{ $url := . | replaceRE `.*href="(https?://[^"]+)".*` "$1" }}
+              {{ if not (in $uniqueLinks $url) }}
+                {{ $uniqueLinks = $uniqueLinks | append $url }}
+                {{ $text := . | replaceRE `<a[^>]*>(.*?)</a>` "$1" | htmlUnescape | safeHTML }}
+                    <li>
+                        <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="has-text-link">
+                            <strong>{{ $text }}</strong> — <small class="has-text-grey">{{ $url }}</small>
+                        </a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+
+    </div>
+</div>
+
+{{ end }}
