@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      <time>{{ .Date.Format "2006-01-02" }}</time>
+      &nbsp;·&nbsp; {{ .ReadingTime }} min read
+      {{ with .Params.tags }}
+        &nbsp;·&nbsp;
+        {{ range . }}<a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a> {{ end }}
+      {{ end }}
+    </div>
+  </header>
+  <hr>
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  <hr>
+  <nav class="post-nav">
+    {{ if .PrevInSection }}<a href="{{ .PrevInSection.RelPermalink }}">&#171; {{ .PrevInSection.Title }}</a>{{ end }}
+    {{ if .NextInSection }}<a href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title }} &#187;</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

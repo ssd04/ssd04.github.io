@@ -153,3 +153,7 @@
 [data-theme='light'] #theme-toggle {
     color: #2c3e50;
 }
+
+[data-theme='dark'] .heart {
+  color: #8b6fcb;
+}

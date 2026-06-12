@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  <title>{{- if .Title -}}{{ .Title }} | {{ .Site.Title }}{{- else -}}{{ .Site.Title }}{{- end -}}</title>
+  <link rel="alternate" type="application/rss+xml" href="{{ "/index.xml" | relURL }}" title="{{ .Site.Title }}">
+  <link rel="stylesheet" href="{{ "/style.css" | relURL }}">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <script src="{{ "/js/theme.js" | relURL }}" defer></script>
+</head>

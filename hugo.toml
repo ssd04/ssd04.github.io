@@ -2,5 +2,5 @@ baseURL = ""
 relativeURLs = "True"
 languageCode = "en-us"
 title = "i code ergo sum"
-theme = "aplos"
+theme = "clean"
 tags = ["vim", "philosophy", "coding", "readingbooks"]

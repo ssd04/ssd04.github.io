@@ -1,6 +1,7 @@
 # themes
 /themes/*
 !/themes/aplos
+!/themes/clean
 /themes/aplos/static/bulma
 /themes/aplos/static/*.zip
 

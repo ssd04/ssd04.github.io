@@ -1,0 +1,46 @@
+{{ define "main" }}
+<h1>posts</h1>
+
+{{ if $.Site.Taxonomies.tags }}
+<div class="tag-filter">
+  <button class="tag active" data-tag="">#all</button>
+  {{ range $name, $_ := $.Site.Taxonomies.tags }}
+  <button class="tag" data-tag="{{ $name }}">#{{ $name }}</button>
+  {{ end }}
+</div>
+{{ end }}
+
+<ul class="blog-posts" id="post-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li data-tags="{{ delimit .Params.tags "," }}">
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+<script>
+(function() {
+  var buttons = document.querySelectorAll('.tag-filter .tag');
+  var posts = document.querySelectorAll('#post-list li');
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tag = this.dataset.tag;
+
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+
+      posts.forEach(function(li) {
+        if (!tag) {
+          li.style.display = '';
+        } else {
+          var tags = li.dataset.tags ? li.dataset.tags.split(',') : [];
+          li.style.display = tags.indexOf(tag) === -1 ? 'none' : '';
+        }
+      });
+    });
+  });
+})();
+</script>
+{{ end }}
