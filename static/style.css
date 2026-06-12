@@ -302,6 +302,10 @@ article header h1 {
   background-color: var(--code-bg) !important;
 }
 
+[data-theme="dark"] .heart {
+  color: #4da6ff;
+}
+
 /* Theme toggle button */
 
 #theme-toggle {
