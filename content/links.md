@@ -1,8 +1,9 @@
 ---
-title: "Interesting links"
 date: 2026-06-07T13:54:35+03:00
 draft: false
 ---
+
+# Interesting links
 
 This list includes interesting/cool projects links that are worth saving.
 
@@ -15,5 +16,10 @@ This list includes interesting/cool projects links that are worth saving.
 >
 > A map with the view of the world's energy infrastructure plants mapped to OpenStreetMap.
 
+---
 
+# Blogs
 
+> [Personal site of Andrei N. Ciobanu](https://andreinc.net/) - [feed/rss](https://andreinc.net/feed.xml)
+>
+> Mathematics, programming. A lot of content referencies/links.

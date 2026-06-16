@@ -6,14 +6,17 @@ draft: false
 
 This includes small notes and referencies on different broad topics. 
 
-\* *log good content, instead of keeping a lot of tabs open "with very good content" that i want to check again later*
+\* *log notes and links instead of keeping lots of tabs open with good content I want to check again later*
 
+---
 
 ## Technology
 
 > [The possessed machines](https://possessedmachines.com/)
 >
 > A close reading of prophetic fiction (Dostoevsky's Demons) in the age of artificial superintelligence.
+
+---
 
 ## Math
 
@@ -25,9 +28,21 @@ This includes small notes and referencies on different broad topics.
 >
 > A nice blog with very good math content: deep, insightfull explanations and visualizations.
 
+---
+
 ## Coding
 
 > [Peter Naur, Programming as Theory Building](https://pages.cs.wisc.edu/~remzi/Naur.pdf)
+
+> [Epigrams in Programming](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+>
+> From "Epigrams in Programming" article, September, 1982:
+> - "It is easier to write an incorrect program than understand a correct one."
+> - "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it."
+> - "Don't have good ideas if you aren't willing to be responsible for them."
+> - "In programming, as in everything else, to be in error is to be reborn."
+> - ...
+---
 
 ## Life
 
@@ -38,6 +53,8 @@ This includes small notes and referencies on different broad topics.
 > [Digital Dante](https://digitaldante.columbia.edu/)
 >
 > A digital version of Dante's masterpiece "The Divine Comedy" with multiple translations, commentaries, diagrams, articles.
+
+---
 
 ## Lifestyle
 
